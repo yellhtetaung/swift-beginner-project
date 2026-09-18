@@ -17,7 +17,7 @@ final class UpcomingViewModel {
             .filter { $0.status == .upcoming }
             .sorted { $0.date < $1.date }
     }
-    
+
     func delete(_ show: Show, context: ModelContext) {
         context.delete(show)
     }

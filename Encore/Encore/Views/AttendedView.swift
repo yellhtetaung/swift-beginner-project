@@ -48,7 +48,7 @@ struct AttendedView: View {
                 }
             }
             .sheet(isPresented: $vm.showingAddSheet) {
-                AddEditShowView()
+                AddEditShowView(initialStatus: .attended)
             }
         }
     }
@@ -56,5 +56,5 @@ struct AttendedView: View {
 
 #Preview {
     AttendedView()
-        .modelContainer(for: Show.self)
+        .modelContainer(for: Show.self, inMemory: true)
 }

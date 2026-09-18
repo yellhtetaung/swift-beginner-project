@@ -14,13 +14,43 @@ struct UpcomingView: View {
     @State private var viewModel = UpcomingViewModel()
     
     var body: some View {
-        @Bindable var vm = viewModel()
+        @Bindable var vm = viewModel
         
         NavigationStack {
             Group {
                 if viewModel.filteredShows(allShows).isEmpty {
-                    ContentUnavailableView("No Upcoming Shows", systemImage: "calender")
+                    ContentUnavailableView("No Upcoming Shows", systemImage: "calendar")
+                } else {
+                    List {
+                        ForEach(viewModel.filteredShows(allShows)) { show in
+                            NavigationLink(value: show) {
+                                ShowRowView(show: show)
+                            }
+                        }
+                        .onDelete { indexSet in
+                            let shows = viewModel.filteredShows(allShows)
+                            
+                            for index in indexSet {
+                                viewModel.delete(shows[index], context: context)
+                            }
+                        }
+                    }
                 }
+            }
+            .navigationTitle("Upcoming")
+            .navigationDestination(for: Show.self) { show in
+                // ShowDetailView
+                
+            }
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Add Show", systemImage: "plus") {
+                        viewModel.showingAddSheet = true
+                    }
+                }
+            }
+            .sheet(isPresented: $vm.showingAddSheet) {
+                AddEditShowView(initialStatus: .upcoming)
             }
         }
     }
@@ -28,4 +58,5 @@ struct UpcomingView: View {
 
 #Preview {
     UpcomingView()
+        .modelContainer(for: Show.self, inMemory: true)
 }
