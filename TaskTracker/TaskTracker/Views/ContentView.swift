@@ -54,7 +54,7 @@ struct ContentView: View {
     }
 
     private func addTask() {
-        var newTask = Task(title: newTaskTitle)
+        let newTask = Task(title: newTaskTitle)
         context.insert(newTask)
         newTaskTitle = ""
     }
