@@ -22,7 +22,7 @@ final class AttendedViewModel {
                 || $0.city.localizedCaseInsensitiveContains(searchText)
         }
     }
-    
+
     func delete(_ show: Show, context: ModelContext) {
         context.delete(show)
     }

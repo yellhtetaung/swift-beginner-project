@@ -24,7 +24,7 @@ final class Show {
 
     var rating: Int?
     var notes: String?
-    var satlist: [String]?
+    var setlist: [String]
     var createdAt: Date
 
     init(
@@ -41,7 +41,7 @@ final class Show {
         self.status = status
         self.rating = nil
         self.notes = nil
-        self.satlist = []
+        self.setlist = []
         self.createdAt = .now
     }
 }
