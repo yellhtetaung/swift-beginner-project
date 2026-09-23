@@ -23,7 +23,7 @@ struct MarkToAttendedSheet: View {
                     .lineLimit(2)
                     .padding(.top)
 
-                // StarRatingView
+                StarRatingView(rating: $viewModel.pendingRating)
 
                 Text("Optional - you can alwasy add rating later")
                     .font(.caption)

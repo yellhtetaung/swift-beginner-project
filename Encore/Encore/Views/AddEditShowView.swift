@@ -15,7 +15,7 @@ struct AddEditShowView: View {
 
     let existingShow: Show?
 
-    init(show: Show? = nil, initialStatus: ShowStatus = .upcoming) {
+    init(show: Show? = nil, initialStatus: ShowStatus = .attended) {
         self.existingShow = show
         self._viewModel = State(initialValue: AddEditShowViewModel(show: show, initialStatus: initialStatus))
     }
@@ -36,6 +36,14 @@ struct AddEditShowView: View {
                         }
                     }
                 }
+
+                if viewModel.status == .attended {
+                    Section("Rating") {
+                        StarRatingView(rating: $vm.rating)
+                            .padding(.vertical, 4)
+                    }
+                }
+
                 Section("Notes") {
                     TextField("Add notes...", text: $vm.notes, axis: .vertical)
                         .lineLimit(3...6)
