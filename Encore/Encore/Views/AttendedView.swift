@@ -19,9 +19,11 @@ struct AttendedView: View {
         NavigationStack {
             Group {
                 if viewModel.filteredShows(allShows).isEmpty {
-                    ContentUnavailableView(
-                        "No Result",
-                        systemImage: "magnifyingglass"
+                    EmptyStateView(
+                        icon: "music.mic",
+                        title: viewModel.searchText.isEmpty ? "No Shows Yet" : "No Results",
+                        message: viewModel.searchText.isEmpty
+                            ? "Start logging for the concert you've been to" : "Try searching for something else"
                     )
                 } else {
                     List {
@@ -46,7 +48,7 @@ struct AttendedView: View {
             .searchable(text: $vm.searchText, prompt: "Artists, Venues, Cities")
             .navigationDestination(for: Show.self) { show in
                 ShowDetailView(show: show)
-                
+
             }
             .toolbar {
                 Button("Add show!", systemImage: "plus") {
