@@ -6,43 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		060772B23067ABDA0080F7FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06EC7B443066EE7E00A55588 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06EC7B4B3066EE7E00A55588;
-			remoteInfo = ScoreKeeper;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		060772AE3067ABDA0080F7FA /* ScoreKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06EC7B4C3066EE7E00A55588 /* ScoreKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C4FF903069573D00336C18 /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		060772AF3067ABDA0080F7FA /* ScoreKeeperTests */ = {
+		06C4FF923069573D00336C18 /* Birthdays */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ScoreKeeperTests;
-			sourceTree = "<group>";
-		};
-		06EC7B4E3066EE7E00A55588 /* ScoreKeeper */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ScoreKeeper;
+			path = Birthdays;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		060772AB3067ABDA0080F7FA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06EC7B493066EE7E00A55588 /* Frameworks */ = {
+		06C4FF8D3069573D00336C18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,20 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06EC7B433066EE7E00A55588 = {
+		06C4FF873069573D00336C18 = {
 			isa = PBXGroup;
 			children = (
-				06EC7B4E3066EE7E00A55588 /* ScoreKeeper */,
-				060772AF3067ABDA0080F7FA /* ScoreKeeperTests */,
-				06EC7B4D3066EE7E00A55588 /* Products */,
+				06C4FF923069573D00336C18 /* Birthdays */,
+				06C4FF913069573D00336C18 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		06EC7B4D3066EE7E00A55588 /* Products */ = {
+		06C4FF913069573D00336C18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06EC7B4C3066EE7E00A55588 /* ScoreKeeper.app */,
-				060772AE3067ABDA0080F7FA /* ScoreKeeperTests.xctest */,
+				06C4FF903069573D00336C18 /* Birthdays.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,99 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		060772AD3067ABDA0080F7FA /* ScoreKeeperTests */ = {
+		06C4FF8F3069573D00336C18 /* Birthdays */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 060772B43067ABDA0080F7FA /* Build configuration list for PBXNativeTarget "ScoreKeeperTests" */;
+			buildConfigurationList = 06C4FF9B3069573F00336C18 /* Build configuration list for PBXNativeTarget "Birthdays" */;
 			buildPhases = (
-				060772AA3067ABDA0080F7FA /* Sources */,
-				060772AB3067ABDA0080F7FA /* Frameworks */,
-				060772AC3067ABDA0080F7FA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				060772B33067ABDA0080F7FA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				060772AF3067ABDA0080F7FA /* ScoreKeeperTests */,
-			);
-			name = ScoreKeeperTests;
-			packageProductDependencies = (
-			);
-			productName = ScoreKeeperTests;
-			productReference = 060772AE3067ABDA0080F7FA /* ScoreKeeperTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		06EC7B4B3066EE7E00A55588 /* ScoreKeeper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06EC7B573066EE8000A55588 /* Build configuration list for PBXNativeTarget "ScoreKeeper" */;
-			buildPhases = (
-				06EC7B483066EE7E00A55588 /* Sources */,
-				06EC7B493066EE7E00A55588 /* Frameworks */,
-				06EC7B4A3066EE7E00A55588 /* Resources */,
+				06C4FF8C3069573D00336C18 /* Sources */,
+				06C4FF8D3069573D00336C18 /* Frameworks */,
+				06C4FF8E3069573D00336C18 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				06EC7B4E3066EE7E00A55588 /* ScoreKeeper */,
+				06C4FF923069573D00336C18 /* Birthdays */,
 			);
-			name = ScoreKeeper;
+			name = Birthdays;
 			packageProductDependencies = (
 			);
-			productName = ScoreKeeper;
-			productReference = 06EC7B4C3066EE7E00A55588 /* ScoreKeeper.app */;
+			productName = Birthdays;
+			productReference = 06C4FF903069573D00336C18 /* Birthdays.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		06EC7B443066EE7E00A55588 /* Project object */ = {
+		06C4FF883069573D00336C18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
-					060772AD3067ABDA0080F7FA = {
-						CreatedOnToolsVersion = 26.6;
-						TestTargetID = 06EC7B4B3066EE7E00A55588;
-					};
-					06EC7B4B3066EE7E00A55588 = {
+					06C4FF8F3069573D00336C18 = {
 						CreatedOnToolsVersion = 26.6;
 					};
 				};
 			};
-			buildConfigurationList = 06EC7B473066EE7E00A55588 /* Build configuration list for PBXProject "ScoreKeeper" */;
+			buildConfigurationList = 06C4FF8B3069573D00336C18 /* Build configuration list for PBXProject "Birthdays" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 06EC7B433066EE7E00A55588;
+			mainGroup = 06C4FF873069573D00336C18;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 06EC7B4D3066EE7E00A55588 /* Products */;
+			productRefGroup = 06C4FF913069573D00336C18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06EC7B4B3066EE7E00A55588 /* ScoreKeeper */,
-				060772AD3067ABDA0080F7FA /* ScoreKeeperTests */,
+				06C4FF8F3069573D00336C18 /* Birthdays */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		060772AC3067ABDA0080F7FA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06EC7B4A3066EE7E00A55588 /* Resources */ = {
+		06C4FF8E3069573D00336C18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,14 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		060772AA3067ABDA0080F7FA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06EC7B483066EE7E00A55588 /* Sources */ = {
+		06C4FF8C3069573D00336C18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,58 +124,8 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		060772B33067ABDA0080F7FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 06EC7B4B3066EE7E00A55588 /* ScoreKeeper */;
-			targetProxy = 060772B23067ABDA0080F7FA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		060772B53067ABDA0080F7FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LAH8G97MT;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tlsmm.ScoreKeeperTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreKeeper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScoreKeeper";
-			};
-			name = Debug;
-		};
-		060772B63067ABDA0080F7FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LAH8G97MT;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tlsmm.ScoreKeeperTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreKeeper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScoreKeeper";
-			};
-			name = Release;
-		};
-		06EC7B553066EE8000A55588 /* Debug */ = {
+		06C4FF993069573F00336C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		06EC7B563066EE8000A55588 /* Release */ = {
+		06C4FF9A3069573F00336C18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +246,7 @@
 			};
 			name = Release;
 		};
-		06EC7B583066EE8000A55588 /* Debug */ = {
+		06C4FF9C3069573F00336C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -383,7 +266,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tlsmm.ScoreKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tlsmm.Birthdays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -395,7 +278,7 @@
 			};
 			name = Debug;
 		};
-		06EC7B593066EE8000A55588 /* Release */ = {
+		06C4FF9D3069573F00336C18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -415,7 +298,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tlsmm.ScoreKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tlsmm.Birthdays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -430,34 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		060772B43067ABDA0080F7FA /* Build configuration list for PBXNativeTarget "ScoreKeeperTests" */ = {
+		06C4FF8B3069573D00336C18 /* Build configuration list for PBXProject "Birthdays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				060772B53067ABDA0080F7FA /* Debug */,
-				060772B63067ABDA0080F7FA /* Release */,
+				06C4FF993069573F00336C18 /* Debug */,
+				06C4FF9A3069573F00336C18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06EC7B473066EE7E00A55588 /* Build configuration list for PBXProject "ScoreKeeper" */ = {
+		06C4FF9B3069573F00336C18 /* Build configuration list for PBXNativeTarget "Birthdays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06EC7B553066EE8000A55588 /* Debug */,
-				06EC7B563066EE8000A55588 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		06EC7B573066EE8000A55588 /* Build configuration list for PBXNativeTarget "ScoreKeeper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06EC7B583066EE8000A55588 /* Debug */,
-				06EC7B593066EE8000A55588 /* Release */,
+				06C4FF9C3069573F00336C18 /* Debug */,
+				06C4FF9D3069573F00336C18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 06EC7B443066EE7E00A55588 /* Project object */;
+	rootObject = 06C4FF883069573D00336C18 /* Project object */;
 }
